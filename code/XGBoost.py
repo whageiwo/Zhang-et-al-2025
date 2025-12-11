@@ -26,7 +26,7 @@ plt.rcParams['axes.unicode_minus'] = False
 warnings.filterwarnings('ignore')
 # 1. 数据加载与预处理
 print("=== 步骤1: 数据加载与预处理 ===")
-df = pd.read_csv('乒乓球特征参数-张蓓.csv')
+df = pd.read_csv('10.9+HQ改.csv')
 target = 'ACL stress'
 #drop_cols = ['ACL stress']
 drop_cols = ['ACL stress']
@@ -652,3 +652,4 @@ combine_plots_to_one()
 print(f"\n所有紧凑图已保存至: {os.path.abspath(save_dir)}")
 
 print(f"已处理特征总数: {len(X_test_sel.columns)}")
+
