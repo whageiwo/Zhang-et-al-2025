@@ -28,7 +28,7 @@ warnings.filterwarnings('ignore')
 print("=== 步骤1: 数据加载与预处理 ===")
 df = pd.read_csv('乒乓球特征参数-张蓓.csv')
 target = 'ACL stress'
-#drop_cols = ['ACL stress','knee_valgus_vel','GRF','KFM','T/G']
+#drop_cols = ['ACL stress']
 drop_cols = ['ACL stress']
 X = df.drop(drop_cols, axis=1)
 y = df[target]
@@ -650,4 +650,5 @@ print("\n正在生成3x4多图组合...")
 combine_plots_to_one()
 
 print(f"\n所有紧凑图已保存至: {os.path.abspath(save_dir)}")
+
 print(f"已处理特征总数: {len(X_test_sel.columns)}")
